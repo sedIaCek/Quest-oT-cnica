@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main()
+{   
+   char reverter []{"Vamos reverter essa String literal"};
+   int tamanho = sizeof(reverter);
+   char revertido [34];
+   int aux{34};
+   
+   for(int i{0}; i<tamanho;i++){
+       revertido[aux] = reverter[i];
+       aux--;
+   }
+   for(int i{0}; i<tamanho;i++){
+       std::cout << revertido[i];
+   }
+
+    return 0;
+}
